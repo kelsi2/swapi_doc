@@ -1,7 +1,7 @@
 # SWAPI Tutorial
 
 The Star Wars API (SWAPI) allows users to access a multitude of data about Star
-Wars including People, Films, Planets, and more! This tutorial will walk you
+Wars including People, Films, Planets, and more. This tutorial will walk you
 through how to search for a movie that features Luke Skywalker.
 
 ## The Basics
@@ -10,7 +10,7 @@ The base URL for searching SWAPI is `https://swapi.dev/api/`. This should be
 added to the beginning of any endpoints you are accessing.
 
 Since SWAPI is an open API, no authentication is needed to access the data.
-Without further ado, we can get straight to our search for Luke Skywalker!
+Without further ado, we can get straight to our search for Luke Skywalker.
 
 ## People Endpoint
 
@@ -86,7 +86,7 @@ endpoint, so we will take a look at that next.
 
 ## Films Endpoint
 
-The films array retrieved from the Luke Skywalker call looked like this:
+The films array retrieved from the Luke Skywalker call looks like this:
 
 ```json
 {
@@ -110,8 +110,8 @@ almost identical to the people endpoints:
 - `/films/schema/` -- Retrieves the schema for the films endpoint in JSON
   format.
 
-To access the films Luke Skywalker has been in we can access `/films/1/`,
-`/films/2/`, `/films/3/`, and `/films/6/`.
+To access the films Luke Skywalker has been in we can access the `/films/1/`,
+`/films/2/`, `/films/3/`, and `/films/6/` endpoints.
 
 Let's make a call to:
 
@@ -193,5 +193,5 @@ Luke Skywalker in the Star Wars API.
 
 Please refer to the [official documentation](https://swapi.dev/documentation)
 for further information on other endpoints and data you can access. You can also
-find a few language-specific SDKs here to easily import this API into your
+find a few language-specific SDKs there to easily import this API into your
 projects.
