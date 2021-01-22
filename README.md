@@ -113,7 +113,13 @@ almost identical to the people endpoints:
 To access the films Luke Skywalker has been in we can access `/films/1/`,
 `/films/2/`, `/films/3/`, and `/films/6/`.
 
-Here's a sample of the result of a call to `/films/1`:
+Let's make a call to:
+
+```
+curl "https://swapi.dev/api/films/1/"
+```
+
+This is what the result looks like:
 
 ```json
 {
@@ -187,5 +193,5 @@ Luke Skywalker in the Star Wars API.
 
 Please refer to the [official documentation](https://swapi.dev/documentation)
 for further information on other endpoints and data you can access. You can also
-find a few language-specific SDK's here to easily import this API into your
+find a few language-specific SDKs here to easily import this API into your
 projects.
