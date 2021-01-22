@@ -22,9 +22,9 @@ This API allows us to search for people in a few ways:
   format.
 
 If you're interested to see what information we will be looking at you can make
-a request for the schema, but for our purposes the second call, `/people/:id/`
-seems like what we need. However, we don't know what ID Luke Skywalker is
-located at.
+a call to the people schema but for our purposes the second call,
+`/people/:id/`, seems like what we need. However, we don't know what ID Luke
+Skywalker is located at.
 
 To find out, we can access the `/people/` endpoint and skim the results for Luke
 Skywalker, but SWAPI generously provides a much easier way to find the data we
@@ -37,7 +37,7 @@ curl "https://swapi.dev/api/people/?search=luke+skywalker"
 ```
 
 We are accessing the `search` parameter which filters the `/people/` endpoint
-based on the terms we provide, in this case `luke+skywalker`.
+based on the terms we provide, in this case, `luke+skywalker`.
 
 The result looks like this:
 
@@ -119,7 +119,7 @@ Here's a sample of the result of a call to `/films/1`:
 {
   "title": "A New Hope",
   "episode_id": 4,
-  "opening_crawl": "It is a period of civil war.Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet.Pursued by the Empire's sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy....",
+  "opening_crawl": "It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet. Pursued by the Empire's sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy....",
   "director": "George Lucas",
   "producer": "Gary Kurtz, Rick McCallum",
   "release_date": "1977-05-25",
@@ -187,5 +187,5 @@ Luke Skywalker in the Star Wars API.
 
 Please refer to the [official documentation](https://swapi.dev/documentation)
 for further information on other endpoints and data you can access. You can also
-find a number of language specific SDK's here to easily import this API into
-your projects.
+find a few language-specific SDK's here to easily import this API into your
+projects.
